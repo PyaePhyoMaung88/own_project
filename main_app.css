@@ -70,7 +70,7 @@ body {
   color: white;
   position: fixed;
   right: 3vh;
-  top: 3.2vh;
+  top: 3vh;
   z-index: 1100;
 }
 
@@ -272,7 +272,7 @@ body {
     left: 0;
     height: auto;
     margin-left: 0;
-    padding-top: 9vh;
+    padding-top: 8.7vh;
   }
 
   .carousel-container {
