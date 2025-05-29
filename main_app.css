@@ -70,7 +70,7 @@ body {
   color: white;
   position: fixed;
   right: 3vh;
-  top: 3.6vh;
+  top: 3.2vh;
   z-index: 1100;
 }
 
@@ -209,9 +209,9 @@ body {
   	height: 9%;
   }
 
-  .amount_plus {
-    top: min(5vh, 28px);
+  .amount_plus { 
     padding: 0.2vh 0.4vh;
+
   }
 
   .fa-plus {
