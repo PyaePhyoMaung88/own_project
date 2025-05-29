@@ -155,7 +155,6 @@ body {
   left: 15%;
   width: 85%;
   height: 100vh;
-  overflow-y: auto;
   padding-top: 10vh;
   padding-right: 0.5%;
   background-color: #353839;
@@ -224,19 +223,22 @@ body {
 .no{
 	color: #FFD700;
 }
-/*----------number-list strat---------*/
+/*----------2dnumber-list strat---------*/
 
 
-    .number-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
-      gap: 5px;
-      max-width: 50%;
-      margin-left: 1%;
-      margin-top: 1%;
-    }
+.number-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
+  gap: 5px;
+  max-width: 50%;
+  margin-left: 0.5%;
+  margin-top: 0.5%;
+  box-sizing: border-box;
+}
 
-    .number {
+
+
+.number {
     	color: white;
       background-color: black;
       text-align: center;
@@ -254,20 +256,12 @@ body {
 
     @media screen and (max-width: 550px){
 
-    	.number-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(65px, 1fr));
-      gap: 5px;
-      max-width: 100%;
-      margin-left: 1.5%;
-      margin-top: 1.5%;
-      margin-right: 1.5%;
-    }
-
+ 
 
     }
   
 /*_________under 780px___________*/
+
 
 @media screen and (max-width: 780px) {
 
@@ -336,9 +330,11 @@ body {
   .main-content {
     width: 100%;
     left: 0;
-    height: auto;
+    height: 100%;
     margin-left: 0;
     padding-top: 8.7vh;
+    overflow-y: auto;
+
   }
 
   .carousel-container {
@@ -349,6 +345,16 @@ body {
   background: none;
   color: #FFD700;
 }
+
+   	.number-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(65px, 1fr));
+      gap: 5px;
+      max-width: 100%;
+      margin-left: 1.5%;
+      margin-top: 1.5%;
+      margin-right: 1.5%;
+    }
 
 
 }
