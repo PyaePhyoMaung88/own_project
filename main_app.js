@@ -1,3 +1,4 @@
+///Slider
 const slide = document.getElementById("carouselSlide");
 const images = slide.querySelectorAll("img");
 let index = 0;
@@ -15,6 +16,17 @@ function prevSlide() {
   index = (index - 1 + images.length) % images.length;
   updateCarousel();
 }
+/////number card
 
-// Optional: Auto-slide every 5 seconds
-// setInterval(nextSlide, 5000);
+const grid = document.getElementById('numberGrid');
+
+    for (let i = 0; i < 100; i++) {
+      const numStr = i.toString().padStart(2, '0');
+      const div = document.createElement('div');
+      div.className = 'number';
+      div.textContent = numStr;
+      div.addEventListener('click', () => {
+        alert(`You clicked: ${numStr}`);
+      });
+      grid.appendChild(div);
+    }
