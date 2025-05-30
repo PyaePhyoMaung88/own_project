@@ -16,17 +16,35 @@ function prevSlide() {
   index = (index - 1 + images.length) % images.length;
   updateCarousel();
 }
-/////number card
 
-const grid = document.getElementById('numberGrid');
+// 2-digit numbers: 00 to 99
+const grid2d = document.getElementById('numberGrid-2d');
+for (let i = 0; i < 100; i++) {
+  const numStr = i.toString().padStart(2, '0');
+  const div = document.createElement('div');
+  div.className = 'number';
+  div.textContent = numStr;
 
-    for (let i = 0; i < 100; i++) {
-      const numStr = i.toString().padStart(2, '0');
-      const div = document.createElement('div');
-      div.className = 'number';
-      div.textContent = numStr;
-      div.addEventListener('click', () => {
-        alert(`You clicked: ${numStr}`);
-      });
-      grid.appendChild(div);
-    }
+  div.addEventListener('click', () => {
+    alert(`You clicked: ${numStr}`);
+  });
+
+  grid2d.appendChild(div);
+}
+
+// 3-digit numbers: 000 to 999
+const grid3d = document.getElementById('numberGrid-3d');
+for (let i = 0; i < 1000; i++) {
+  const numStr = i.toString().padStart(3, '0');
+  const div = document.createElement('div');
+  div.className = 'number';
+  div.textContent = numStr;
+
+  div.addEventListener('click', () => {
+    alert(`You clicked: ${numStr}`);
+  });
+
+  grid3d.appendChild(div);
+}
+
+
