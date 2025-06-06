@@ -9,7 +9,8 @@ body {
   font-family: Arial, sans-serif;
   min-height: 100vh;   /* Allow content to grow */
   overflow-x: hidden;  /* Only hide horizontal overflow */
-  background-color: #353839;
+  background-color: #0f142c;
+
 }
 
 
